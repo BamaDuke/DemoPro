@@ -19,14 +19,12 @@ public class Main {
 		
 		   try {
 		    	countOfPI = countJpgFilesInDirectory();
-				//System.out.println("The count of jpg files in the Image folder is "+ countOfPI);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		   try {
 		    	countOfPT = countTxtFilesInDirectory();
-				//System.out.println("The count of txt files in the products folder is "+ countOfPT);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -95,7 +93,6 @@ public class Main {
     		File fs = new File(".");
     		String path = fs.getCanonicalPath() + "\\Images\\";
     		File f = new File(path+ id+".jpg");
-    		//File sampleFile = new File("C:\\Users\\Wyatt\\eclipse-workspace\\DemoApi\\Images\\100000.jpg");
     		image = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
     		image = ImageIO.read(f);
     		//System.out.println("Reading complete: " + image);
@@ -117,12 +114,10 @@ public class Main {
 			if (file.isFile() && (file.getName().endsWith(".jpg")))
 				count++;
 		}
-		//System.out.println("Count of files: " + count);
 		return count;
 	}
 	
 	private static ArrayList<Integer> findForUser(String category, String strCompare, ArrayList<Integer> ids, int countOfPts) throws IOException {
-		//File f = new File("C:\\Users\\Wyatt\\eclipse-workspace\\DemoApi\\Products\\");
 		File fs = new File(".");
 		String path = fs.getCanonicalPath() + "\\Products\\";
 		
@@ -258,7 +253,6 @@ public class Main {
 			if (file.isFile() && (file.getName().endsWith(".txt")))
 				count++;
 		}
-		//System.out.println("Count of files: " + count);
 		return count;
 	}
 }
