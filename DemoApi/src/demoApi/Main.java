@@ -239,7 +239,6 @@ public class Main {
 				return returnList;
 			}
 		}
-			//System.out.println("Count of files: " + count);
 			if(returnList.size() > 0)
 				return returnList;
 			return ids; 
