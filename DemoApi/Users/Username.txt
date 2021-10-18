@@ -1,0 +1,6 @@
+password
+first Name
+Middle Name
+Last Name
+phone
+email
