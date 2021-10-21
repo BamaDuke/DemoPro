@@ -12,14 +12,16 @@ public class Product {
 	private String color;
 	private double price;
 	private BufferedImage image;
+	private String features;
 	
-	public Product(int id, String modelName, String modelNumber, String color, double price, BufferedImage image) {
+	public Product(int id, String modelName, String modelNumber, String color, double price, String features, BufferedImage image) {
 		this.id = id;
 		this.modelName = modelName;
 		this.modelNumber = modelNumber;
 		this.color = color;
 		this.price = price;
 		this.image = image;
+		this.features = features; 
 	}
 	
 	public int getID(){
@@ -88,6 +90,7 @@ public class Product {
     	System.out.println(" ModelNumber: " + this.modelNumber);
     	System.out.print("Color: " + this.color);
     	System.out.println(" Price: " +this.price);
+    	System.out.println("Features include: " + this.features);
     	System.out.println("Image: " +this.image);
     	writeToFile(this.image, this.id);
     }
