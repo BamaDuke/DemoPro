@@ -1,0 +1,5 @@
+phone id
+amount bought
+phone id 
+phone bought
+...
